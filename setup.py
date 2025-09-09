@@ -13,9 +13,9 @@ setup(
     description="Delightful developer fortunes and ASCII art for your terminal",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    author="Your Name",
-    author_email="your.email@example.com",
-    url="https://github.com/yourusername/terminal-fortune-cookie",
+    author="",
+    author_email="y.zichen@wustl.edu",
+    url="https://github.com/ZichenYuan/terminal-fortune-cookie",
     packages=find_packages(),
     package_data={
         "fortune_cookie": ["data/*.json"],

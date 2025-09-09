@@ -28,7 +28,7 @@ Delightful developer fortunes and ASCII art that appear every time you open your
 
 ### Option 1: Automatic Installation (Recommended)
 ```bash
-git clone https://github.com/yourusername/terminal-fortune-cookie.git
+git clone https://github.com/ZichenYuan/terminal-fortune-cookie.git
 cd terminal-fortune-cookie
 chmod +x install.sh
 ./install.sh
@@ -37,7 +37,7 @@ chmod +x install.sh
 ### Option 2: Manual Installation
 ```bash
 # 1. Install the package
-git clone https://github.com/yourusername/terminal-fortune-cookie.git
+git clone https://github.com/ZichenYuan/terminal-fortune-cookie.git
 cd terminal-fortune-cookie
 pip install -e .
 
@@ -158,7 +158,7 @@ We'd love your help making Terminal Fortune Cookie even more delightful!
 
 ### Development Setup
 ```bash
-git clone https://github.com/yourusername/terminal-fortune-cookie.git
+git clone https://github.com/ZichenYuan/terminal-fortune-cookie.git
 cd terminal-fortune-cookie
 pip install -e .[dev]  # If you add dev dependencies
 ```
