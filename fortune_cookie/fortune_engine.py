@@ -64,11 +64,22 @@ class FortuneEngine:
         }
         return emojis.get(category, "🍪")
     
+    def _get_category_display_name(self, category):
+        """Get cute display names for categories."""
+        display_names = {
+            "motivational": "Today's Coding Magic ✨",
+            "humor": "Giggles & Bytes 😄",
+            "wisdom": "Ancient Dev Wisdom 🧠",
+            "default": "Sweet Surprises 🍪"
+        }
+        return display_names.get(category, "Sweet Surprises 🍪")
+    
     def display_fortune(self, category=None, with_ascii=True):
         """Display a beautifully formatted fortune with optional ASCII art."""
         fortune, fortune_category = self.get_random_fortune(category)
         color = self._get_category_color(fortune_category)
         emoji = self._get_category_emoji(fortune_category)
+        display_name = self._get_category_display_name(fortune_category)
         
         if with_ascii and random.choice([True, False, True]):  # 66% chance of ASCII art
             # Get ASCII art that matches the vibe
@@ -93,7 +104,7 @@ class FortuneEngine:
         panel = Panel(
             content,
             title=f"[bold bright_white]🍪 Fortune Cookie[/bold bright_white]",
-            subtitle=f"[dim]{fortune_category.title()}[/dim]",
+            subtitle=f"[dim]{display_name}[/dim]",
             border_style=color,
             box=box.ROUNDED,
             padding=(1, 2)

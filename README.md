@@ -47,7 +47,7 @@ echo "fortune-cookie" >> ~/.bashrc   # For Bash
 ```
 
 ## 📖 Usage
-
+The fortune cookie will be automatically generated when ever you open the terminal. But if you want to try the program yourself, here is how.
 ### Basic Usage
 ```bash
 fortune-cookie                    # Random fortune from any category
@@ -66,6 +66,9 @@ fortune-cookie --stats           # Show fortune database statistics
 fortune-cookie --help           # Show help message
 fortune-cookie --version        # Show version info
 ```
+
+### 🎭 ASCII Art Display
+ASCII art appears randomly in about 66% of fortune displays to create visual variety while keeping the output interesting. You'll see cute animals with motivational quotes, tech symbols with humor, and decorative patterns with wisdom!
 
 ## 🎨 Fortune Categories
 
